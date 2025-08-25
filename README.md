@@ -2,6 +2,379 @@
 
 **FinanceTradeAssistant** is a comprehensive, professional-grade trading analysis platform that combines sophisticated technical analysis, automated strategy management, and real-time market monitoring. Built for serious traders and analysts, it provides a complete ecosystem for market analysis with an intuitive CLI interface and advanced strategy customization capabilities.
 
+
+# Available Trading Symbols - FinanceTradeAssistant
+
+This document provides a comprehensive list of all available trading symbols across different asset classes supported by the FinanceTradeAssistant platform.
+
+## 📊 Asset Class Overview
+
+The platform supports the following asset classes:
+- **Forex** (Currency Pairs) - 50+ major, minor, and exotic pairs
+- **Stocks** - 130+ popular stocks across various sectors
+- **Cryptocurrencies** - 88+ digital currencies
+- **Indices** - Major global market indices
+- **Metals** (if available) - Precious metals trading
+
+---
+
+## 💱 Forex Symbols (Currency Pairs)
+
+### Major Pairs
+The most liquid and widely traded currency pairs:
+
+| Symbol | Description | Base/Quote |
+|--------|-------------|------------|
+| EURUSD | Euro / US Dollar | EUR/USD |
+| GBPUSD | British Pound / US Dollar | GBP/USD |
+| USDJPY | US Dollar / Japanese Yen | USD/JPY |
+| USDCHF | US Dollar / Swiss Franc | USD/CHF |
+| AUDUSD | Australian Dollar / US Dollar | AUD/USD |
+| USDCAD | US Dollar / Canadian Dollar | USD/CAD |
+| NZDUSD | New Zealand Dollar / US Dollar | NZD/USD |
+
+### Minor Pairs (Cross Currencies)
+Currency pairs that don't include the US Dollar:
+
+| Symbol | Description | Base/Quote |
+|--------|-------------|------------|
+| EURGBP | Euro / British Pound | EUR/GBP |
+| EURJPY | Euro / Japanese Yen | EUR/JPY |
+| EURCHF | Euro / Swiss Franc | EUR/CHF |
+| EURAUD | Euro / Australian Dollar | EUR/AUD |
+| EURCAD | Euro / Canadian Dollar | EUR/CAD |
+| EURNZD | Euro / New Zealand Dollar | EUR/NZD |
+| GBPJPY | British Pound / Japanese Yen | GBP/JPY |
+| GBPCHF | British Pound / Swiss Franc | GBP/CHF |
+| GBPAUD | British Pound / Australian Dollar | GBP/AUD |
+| GBPCAD | British Pound / Canadian Dollar | GBP/CAD |
+| GBPNZD | British Pound / New Zealand Dollar | GBP/NZD |
+| AUDJPY | Australian Dollar / Japanese Yen | AUD/JPY |
+| AUDCHF | Australian Dollar / Swiss Franc | AUD/CHF |
+| AUDCAD | Australian Dollar / Canadian Dollar | AUD/CAD |
+| AUDNZD | Australian Dollar / New Zealand Dollar | AUD/NZD |
+| CADJPY | Canadian Dollar / Japanese Yen | CAD/JPY |
+| CADCHF | Canadian Dollar / Swiss Franc | CAD/CHF |
+| CHFJPY | Swiss Franc / Japanese Yen | CHF/JPY |
+| NZDJPY | New Zealand Dollar / Japanese Yen | NZD/JPY |
+| NZDCHF | New Zealand Dollar / Swiss Franc | NZD/CHF |
+| NZDCAD | New Zealand Dollar / Canadian Dollar | NZD/CAD |
+
+### Exotic Pairs
+Less liquid pairs involving emerging market currencies:
+
+| Symbol | Description | Region |
+|--------|-------------|---------|
+| USDTRY | US Dollar / Turkish Lira | Europe/Asia |
+| USDZAR | US Dollar / South African Rand | Africa |
+| USDMXN | US Dollar / Mexican Peso | North America |
+| USDBRL | US Dollar / Brazilian Real | South America |
+| USDRUB | US Dollar / Russian Ruble | Europe/Asia |
+| USDPLN | US Dollar / Polish Zloty | Europe |
+| USDHUF | US Dollar / Hungarian Forint | Europe |
+| USDCZK | US Dollar / Czech Koruna | Europe |
+| USDSGD | US Dollar / Singapore Dollar | Asia |
+| USDHKD | US Dollar / Hong Kong Dollar | Asia |
+| USDTHB | US Dollar / Thai Baht | Asia |
+| USDKRW | US Dollar / South Korean Won | Asia |
+| USDINR | US Dollar / Indian Rupee | Asia |
+| USDCNY | US Dollar / Chinese Yuan | Asia |
+
+---
+
+## 📈 Stock Symbols
+
+### Technology Sector
+Leading technology companies:
+
+| Symbol | Company Name | Market Cap |
+|--------|--------------|------------|
+| AAPL | Apple Inc. | Large Cap |
+| MSFT | Microsoft Corporation | Large Cap |
+| GOOGL | Alphabet Inc. (Google) | Large Cap |
+| AMZN | Amazon.com Inc. | Large Cap |
+| TSLA | Tesla Inc. | Large Cap |
+| META | Meta Platforms Inc. (Facebook) | Large Cap |
+| NVDA | NVIDIA Corporation | Large Cap |
+| NFLX | Netflix Inc. | Large Cap |
+| ADBE | Adobe Inc. | Large Cap |
+| CRM | Salesforce Inc. | Large Cap |
+| ORCL | Oracle Corporation | Large Cap |
+| IBM | International Business Machines | Large Cap |
+| INTC | Intel Corporation | Large Cap |
+| AMD | Advanced Micro Devices | Large Cap |
+| QCOM | Qualcomm Inc. | Large Cap |
+| AVGO | Broadcom Inc. | Large Cap |
+| TXN | Texas Instruments | Large Cap |
+| CSCO | Cisco Systems Inc. | Large Cap |
+
+### Financial Sector
+Major banks and financial institutions:
+
+| Symbol | Company Name | Type |
+|--------|--------------|------|
+| JPM | JPMorgan Chase & Co. | Investment Bank |
+| BAC | Bank of America Corp. | Commercial Bank |
+| WFC | Wells Fargo & Co. | Commercial Bank |
+| GS | Goldman Sachs Group | Investment Bank |
+| MS | Morgan Stanley | Investment Bank |
+| C | Citigroup Inc. | Commercial Bank |
+| USB | U.S. Bancorp | Commercial Bank |
+| PNC | PNC Financial Services | Regional Bank |
+| TFC | Truist Financial Corp. | Regional Bank |
+| COF | Capital One Financial | Credit Services |
+| AXP | American Express Co. | Credit Services |
+| BLK | BlackRock Inc. | Asset Management |
+| SCHW | Charles Schwab Corp. | Brokerage |
+
+### Healthcare & Pharmaceuticals
+Healthcare and pharmaceutical companies:
+
+| Symbol | Company Name | Sector |
+|--------|--------------|--------|
+| JNJ | Johnson & Johnson | Pharmaceuticals |
+| PFE | Pfizer Inc. | Pharmaceuticals |
+| UNH | UnitedHealth Group | Health Insurance |
+| ABBV | AbbVie Inc. | Biotechnology |
+| TMO | Thermo Fisher Scientific | Life Sciences |
+| ABT | Abbott Laboratories | Medical Devices |
+| BMY | Bristol Myers Squibb | Pharmaceuticals |
+| MRK | Merck & Co. Inc. | Pharmaceuticals |
+| GILD | Gilead Sciences | Biotechnology |
+| AMGN | Amgen Inc. | Biotechnology |
+
+### Consumer & Retail
+Consumer goods and retail companies:
+
+| Symbol | Company Name | Sector |
+|--------|--------------|--------|
+| WMT | Walmart Inc. | Retail |
+| HD | Home Depot Inc. | Retail |
+| PG | Procter & Gamble | Consumer Goods |
+| KO | Coca-Cola Company | Beverages |
+| PEP | PepsiCo Inc. | Beverages |
+| NKE | Nike Inc. | Apparel |
+| MCD | McDonald's Corp. | Restaurants |
+| SBUX | Starbucks Corp. | Restaurants |
+| DIS | Walt Disney Co. | Entertainment |
+| COST | Costco Wholesale | Retail |
+
+### Energy & Utilities
+Energy and utility companies:
+
+| Symbol | Company Name | Sector |
+|--------|--------------|--------|
+| XOM | Exxon Mobil Corp. | Oil & Gas |
+| CVX | Chevron Corp. | Oil & Gas |
+| COP | ConocoPhillips | Oil & Gas |
+| SLB | Schlumberger Ltd. | Oil Services |
+| EOG | EOG Resources | Oil & Gas |
+| KMI | Kinder Morgan | Pipeline |
+| NEE | NextEra Energy | Utilities |
+| DUK | Duke Energy | Utilities |
+| SO | Southern Company | Utilities |
+
+---
+
+## 🚀 Cryptocurrency Symbols
+
+### Major Cryptocurrencies (Large Cap)
+Top cryptocurrencies by market capitalization:
+
+| Symbol | Name | Market Cap Category |
+|--------|------|-------------------|
+| BTC-USD | Bitcoin | Large Cap |
+| ETH-USD | Ethereum | Large Cap |
+| BNB-USD | Binance Coin | Large Cap |
+| XRP-USD | XRP (Ripple) | Large Cap |
+| ADA-USD | Cardano | Large Cap |
+| SOL-USD | Solana | Large Cap |
+| DOGE-USD | Dogecoin | Large Cap |
+| DOT-USD | Polkadot | Large Cap |
+| MATIC-USD | Polygon | Large Cap |
+| AVAX-USD | Avalanche | Large Cap |
+
+### Mid Cap Cryptocurrencies
+Established cryptocurrencies with growing adoption:
+
+| Symbol | Name | Category |
+|--------|------|----------|
+| LINK-USD | Chainlink | Oracle Services |
+| UNI-USD | Uniswap | DeFi |
+| LTC-USD | Litecoin | Payment |
+| BCH-USD | Bitcoin Cash | Payment |
+| ALGO-USD | Algorand | Smart Contracts |
+| XLM-USD | Stellar | Payment |
+| VET-USD | VeChain | Supply Chain |
+| FIL-USD | Filecoin | Storage |
+| THETA-USD | Theta Network | Video Streaming |
+| EOS-USD | EOS | Smart Contracts |
+
+### Small Cap & Emerging Cryptocurrencies
+Smaller market cap cryptocurrencies with growth potential:
+
+| Symbol | Name | Focus Area |
+|--------|------|------------|
+| MANA-USD | Decentraland | Metaverse |
+| SAND-USD | The Sandbox | Gaming |
+| AXS-USD | Axie Infinity | Gaming |
+| CRV-USD | Curve DAO Token | DeFi |
+| COMP-USD | Compound | DeFi |
+| SUSHI-USD | SushiSwap | DeFi |
+| 1INCH-USD | 1inch Network | DeFi |
+| BAT-USD | Basic Attention Token | Digital Advertising |
+| ZRX-USD | 0x Protocol | DeFi Infrastructure |
+| ENJ-USD | Enjin Coin | Gaming |
+
+### DeFi Tokens
+Decentralized Finance protocol tokens:
+
+| Symbol | Name | Protocol Type |
+|--------|------|---------------|
+| AAVE-USD | Aave | Lending |
+| MKR-USD | Maker | Stablecoin |
+| YFI-USD | yearn.finance | Yield Farming |
+| SNX-USD | Synthetix | Derivatives |
+| REN-USD | Ren Protocol | Interoperability |
+| KNC-USD | Kyber Network | DEX |
+| LRC-USD | Loopring | Layer 2 |
+| BAND-USD | Band Protocol | Oracle |
+
+---
+
+## 🏛️ Index Symbols
+
+### US Market Indices
+Major US stock market indices:
+
+| Symbol | Index Name | Description |
+|--------|------------|-------------|
+| ^GSPC | S&P 500 | 500 largest US companies |
+| ^DJI | Dow Jones Industrial Average | 30 large US companies |
+| ^IXIC | NASDAQ Composite | NASDAQ-listed companies |
+| ^RUT | Russell 2000 | Small-cap US companies |
+| ^VIX | CBOE Volatility Index | Market volatility measure |
+
+### International Indices
+Major global market indices:
+
+| Symbol | Index Name | Region/Country |
+|--------|------------|----------------|
+| ^FTSE | FTSE 100 | United Kingdom |
+| ^GDAXI | DAX | Germany |
+| ^FCHI | CAC 40 | France |
+| ^N225 | Nikkei 225 | Japan |
+| ^HSI | Hang Seng | Hong Kong |
+| ^AXJO | ASX 200 | Australia |
+| ^GSPTSE | TSX Composite | Canada |
+| ^BVSP | Bovespa | Brazil |
+| ^MXX | IPC Mexico | Mexico |
+
+### Sector-Specific Indices
+Sector and thematic indices:
+
+| Symbol | Index Name | Sector Focus |
+|--------|------------|--------------|
+| XLK | Technology Select Sector | Technology |
+| XLF | Financial Select Sector | Financial Services |
+| XLE | Energy Select Sector | Energy |
+| XLV | Health Care Select Sector | Healthcare |
+| XLI | Industrial Select Sector | Industrials |
+| XLY | Consumer Discretionary | Consumer Discretionary |
+| XLP | Consumer Staples | Consumer Staples |
+| XLU | Utilities Select Sector | Utilities |
+| XLB | Materials Select Sector | Materials |
+| XLRE | Real Estate Select Sector | Real Estate |
+
+---
+
+## 🥇 Metals & Commodities
+
+### Precious Metals
+Traditional safe-haven assets:
+
+| Symbol | Metal | Description |
+|--------|-------|-------------|
+| GC=F | Gold Futures | Gold commodity futures |
+| SI=F | Silver Futures | Silver commodity futures |
+| PL=F | Platinum Futures | Platinum commodity futures |
+| PA=F | Palladium Futures | Palladium commodity futures |
+
+### Base Metals
+Industrial metals:
+
+| Symbol | Metal | Primary Use |
+|--------|-------|-------------|
+| HG=F | Copper Futures | Industrial applications |
+| ALI=F | Aluminum Futures | Manufacturing |
+| ZN=F | Zinc Futures | Galvanizing |
+| NI=F | Nickel Futures | Stainless steel |
+
+---
+
+## 📊 Usage Guidelines
+
+### Symbol Format Rules
+- **Forex**: Use standard format (e.g., `EURUSD`, `GBPJPY`)
+- **Stocks**: Use ticker symbols (e.g., `AAPL`, `MSFT`)
+- **Crypto**: Use format with `-USD` suffix (e.g., `BTC-USD`, `ETH-USD`)
+- **Indices**: Use Yahoo Finance format with `^` prefix (e.g., `^GSPC`, `^DJI`)
+- **Futures**: Use `=F` suffix for futures contracts (e.g., `GC=F`, `CL=F`)
+
+### Data Availability
+- **Real-time**: Available for major forex pairs and large-cap stocks
+- **Delayed**: Some smaller stocks and exotic pairs may have 15-20 minute delays
+- **Historical**: Full historical data available for backtesting and analysis
+- **Intraday**: 1m, 5m, 15m, 30m, 1h, 4h timeframes supported
+- **Daily+**: 1d, 1wk, 1mo timeframes for longer-term analysis
+
+### Recommended Timeframes by Asset
+- **Forex Majors**: 1m to 4h for scalping/day trading, 1d for swing trading
+- **Stocks**: 5m to 1h for day trading, 1d to 1wk for position trading
+- **Crypto**: 1m to 1h for active trading, 4h to 1d for swing trading
+- **Indices**: 15m to 4h for short-term, 1d to 1wk for trend analysis
+
+---
+
+## 🔧 Integration Examples
+
+### CLI Usage
+```bash
+# Analyze major forex pair
+python trading_cli.py
+# Select option 1, enter: EURUSD, forex, 30d, 4h
+
+# Analyze technology stock
+# Select option 1, enter: AAPL, stocks, 3mo, 1d
+
+# Analyze cryptocurrency
+# Select option 1, enter: BTC-USD, crypto, 7d, 1h
+```
+
+### Programmatic Usage
+```python
+from backend.pipeline_main import TradingPipeline
+
+pipeline = TradingPipeline()
+
+# Multi-asset analysis
+symbols = [
+    ('EURUSD', 'forex'),      # Major forex pair
+    ('AAPL', 'stocks'),       # Tech stock
+    ('BTC-USD', 'crypto'),    # Cryptocurrency
+    ('^GSPC', 'indices')      # S&P 500 index
+]
+
+for symbol, asset_type in symbols:
+    result = pipeline.analyze_symbol(symbol, asset_type, '30d', '4h')
+    print(f"{symbol}: {result['primary_signal']}")
+```
+
+---
+
+**Note**: Symbol availability may vary based on market hours, data provider limitations, and regional restrictions. Always verify symbol availability before implementing trading strategies. The platform automatically handles symbol validation and provides error messages for unsupported symbols.
+
+
 ## 🚀 Core Features
 
 ### 🎯 Advanced Strategy Management System
@@ -596,9 +969,7 @@ TRADING_CONFIG = {
 ### Planned Enhancements
 - **Machine Learning Integration**: AI-powered signal optimization
 - **Backtesting Engine**: Historical strategy performance analysis
-- **Web Dashboard**: Browser-based portfolio monitoring
-- **Mobile Alerts**: Push notifications for mobile devices
-- **Social Trading**: Signal sharing and community features
+
 
 ### Advanced Features in Development
 - **Multi-Timeframe Analysis**: Concurrent analysis across multiple timeframes

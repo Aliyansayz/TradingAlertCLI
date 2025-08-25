@@ -22,7 +22,7 @@ def test_cli_imports():
         from symbol_groups_manager import SymbolGroupManager
         print("✅ Symbol groups manager imported successfully")
         
-        from group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter
+        from workflow.group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter
         print("✅ Analysis engine imported successfully")
         
         import schedule

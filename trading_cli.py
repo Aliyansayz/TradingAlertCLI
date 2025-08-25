@@ -322,7 +322,7 @@ class PeriodicUnitTester:
             print(f"🔍 Running unit test for {symbol_key} in {group.name}")
             
             # Run analysis
-            from group_analysis_engine import SymbolAnalyzer
+            from workflow.group_analysis_engine import SymbolAnalyzer
             result = SymbolAnalyzer.analyze_symbol(symbol_key, config)
             
             # Store result
@@ -545,7 +545,7 @@ class TradingCLI:
         print(f"\n🔍 Analyzing {symbol} ({asset_type})...")
         
         try:
-            from group_analysis_engine import SymbolAnalyzer, SymbolDataFetcher
+            from workflow.group_analysis_engine import SymbolAnalyzer, SymbolDataFetcher
             result = SymbolAnalyzer.analyze_symbol(f"{symbol}_{timeframe}", config)
             
             if result.success:

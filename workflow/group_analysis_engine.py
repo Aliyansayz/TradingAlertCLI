@@ -110,17 +110,39 @@ class SymbolDataFetcher:
             if data.empty:
                 return pd.DataFrame()
             
-            # Clean data
+            # Clean data - handle MultiIndex columns
             if isinstance(data.columns, pd.MultiIndex):
+                # For MultiIndex, flatten the columns
                 data.columns = ['_'.join(col).strip() for col in data.columns.values]
                 data.columns = [col.replace(f'_{yf_symbol}', '').rstrip('_') for col in data.columns]
             
-            # Standardize column names
+            # Standardize column names - handle various possible formats
             column_mapping = {
                 'Open': 'open', 'High': 'high', 'Low': 'low',
-                'Close': 'close', 'Volume': 'volume', 'Adj Close': 'adj_close'
+                'Close': 'close', 'Volume': 'volume', 'Adj Close': 'adj_close',
+                # Handle lowercase versions that might come from MultiIndex cleanup
+                'open': 'open', 'high': 'high', 'low': 'low', 
+                'close': 'close', 'volume': 'volume', 'adj_close': 'adj_close',
+                # Handle other common variations
+                'Adj_Close': 'adj_close', 'adj close': 'adj_close'
             }
+            
+            # Apply column mapping
             data.rename(columns=column_mapping, inplace=True)
+            
+            # Ensure we have the required columns
+            required_columns = ['open', 'high', 'low', 'close', 'volume']
+            missing_columns = [col for col in required_columns if col not in data.columns]
+            
+            if missing_columns:
+                # Try to find columns with similar names
+                available_cols = data.columns.tolist()
+                for missing_col in missing_columns:
+                    for available_col in available_cols:
+                        if missing_col.lower() in available_col.lower():
+                            data[missing_col] = data[available_col]
+                            break
+            
             data = data.dropna()
             
             return data

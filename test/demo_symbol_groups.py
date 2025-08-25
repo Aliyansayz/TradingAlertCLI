@@ -12,7 +12,7 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from symbol_groups_manager import SymbolGroupManager, SymbolGroup, SymbolConfig
-from group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter
+from workflow.group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter
 from datetime import datetime
 
 def create_demo_groups(manager: SymbolGroupManager):
