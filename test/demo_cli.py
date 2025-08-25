@@ -19,7 +19,7 @@ def test_cli_imports():
         from trading_cli import TradingCLI, IndicatorSettings, SchedulerSettings
         print("✅ Main CLI classes imported successfully")
         
-        from symbol_groups_manager import SymbolGroupManager
+        from utility.symbol_groups_manager import SymbolGroupManager
         print("✅ Symbol groups manager imported successfully")
         
         from workflow.group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter
@@ -50,7 +50,7 @@ def test_basic_functionality():
         print(f"✅ Scheduler settings created: {len(scheduler_settings.settings)} settings")
         
         # Test symbol groups manager
-        from symbol_groups_manager import SymbolGroupManager
+        from utility.symbol_groups_manager import SymbolGroupManager
         manager = SymbolGroupManager()
         groups = manager.list_groups()
         print(f"✅ Symbol groups manager working: {len(groups)} groups found")
@@ -98,7 +98,7 @@ def create_sample_group():
     print("\n🏗️ Creating a sample symbol group...")
     
     try:
-        from symbol_groups_manager import SymbolGroupManager, SymbolGroup, SymbolConfig
+        from utility.symbol_groups_manager import SymbolGroupManager, SymbolGroup, SymbolConfig
         from datetime import datetime
         
         manager = SymbolGroupManager()

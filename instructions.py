@@ -153,7 +153,7 @@ def get_migration_guide() -> str:
        ```python
        # Original approach from yfinance_data_loader.py + strategy.py
        import yfinance as yf
-       from indicators import ADX, Stochastic_Oscillator
+       from utility.indicators import ADX, Stochastic_Oscillator
        
        eurusd_data = yf.download('EURUSD=X', period='7d', interval='1h')
        # ... data cleaning ...

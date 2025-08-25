@@ -11,10 +11,10 @@ def test_basic_imports():
         print("Testing basic imports...")
         
         # Test symbol imports
-        from forex_symbols import get_forex_symbols
-        from indices_symbols import get_indices_symbols  
-        from crypto_symbols import get_crypto_symbols
-        from stocks_symbols import get_popular_stocks
+        from utility.forex_symbols import get_forex_symbols
+        from utility.indices_symbols import get_indices_symbols  
+        from utility.crypto_symbols import get_crypto_symbols
+        from utility.stocks_symbols import get_popular_stocks
         
         print("✓ Symbol modules imported successfully")
         
@@ -40,9 +40,9 @@ def test_symbol_lookup():
     try:
         print("\nTesting symbol lookup...")
         
-        from forex_symbols import get_forex_symbols
-        from crypto_symbols import get_crypto_symbols, get_crypto_categories
-        from stocks_symbols import get_popular_stocks, search_stock
+        from utility.forex_symbols import get_forex_symbols
+        from utility.crypto_symbols import get_crypto_symbols, get_crypto_categories
+        from utility.stocks_symbols import get_popular_stocks, search_stock
         
         # Test forex lookup
         forex = get_forex_symbols()

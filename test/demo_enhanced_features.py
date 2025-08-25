@@ -13,7 +13,7 @@ import time
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from trading_cli import TradingCLI, KeyboardInput, IndicatorSettings
-from symbol_groups_manager import SymbolGroupManager, SymbolConfig
+from utility.symbol_groups_manager import SymbolGroupManager, SymbolConfig
 
 def demo_enhanced_features():
     """Demonstrate the enhanced CLI features."""

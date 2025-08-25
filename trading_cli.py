@@ -557,7 +557,7 @@ class TradingCLI:
                 
                 if not raw_data.empty:
                     # Apply indicators to get directional data
-                    from indicators import ADX, Stochastic_Oscillator, SupertrendIndicator
+                    from utility.indicators import ADX, Stochastic_Oscillator, SupertrendIndicator
                     
                     # Calculate indicators with the data
                     adx_indicator = ADX(adx_period=14)
@@ -2260,7 +2260,7 @@ class TradingCLI:
             
             if settings_choice == "1":
                 # Use group settings
-                from backend.symbol_groups_manager import SymbolSchedulerSettings
+                from utility.symbol_groups_manager import SymbolSchedulerSettings
                 scheduler_settings = SymbolSchedulerSettings(use_group_settings=True)
                 
             elif settings_choice == "2":
@@ -2290,7 +2290,7 @@ class TradingCLI:
     
     def _configure_custom_scheduler_settings(self):
         """Helper method to configure custom scheduler settings."""
-        from backend.symbol_groups_manager import SymbolSchedulerSettings, TimeWindowSlot
+        from utility.symbol_groups_manager import SymbolSchedulerSettings, TimeWindowSlot
         import pytz
         
         print("\n⏰ Custom Scheduler Configuration")

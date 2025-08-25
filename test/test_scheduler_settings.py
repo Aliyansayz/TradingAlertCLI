@@ -7,7 +7,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from backend.symbol_groups_manager import (
+from utility.symbol_groups_manager import (
     SymbolGroupManager, SymbolSchedulerSettings, TimeWindowSlot, SymbolConfig
 )
 from datetime import datetime, time

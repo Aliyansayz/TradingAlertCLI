@@ -15,8 +15,8 @@ from datetime import datetime
 import yfinance as yf
 
 # Import the indicators and oscillators
-from indicators import ADX, Stochastic_Oscillator, RSI, ATRBands, SupertrendIndicator
-from indicators_oscillators import Oscillator, Oscillator_Status
+from utility.indicators import ADX, Stochastic_Oscillator, RSI, ATRBands, SupertrendIndicator
+from utility.indicators_oscillators import Oscillator, Oscillator_Status
 
 def fetch_us30_data(period='7d', interval='30m'):
     """Fetch US30 data with specified parameters."""

@@ -15,15 +15,16 @@ import os
 # Add backend path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from symbol_groups_manager import (
+from trading_cli import TradingCLI, KeyboardInput, IndicatorSettings
+from utility.symbol_groups_manager import (
     SymbolGroupManager, 
     SymbolGroup, 
     SymbolConfig, 
-    IndicatorSettings, 
+    IndicatorSettings as SGIndicatorSettings, 
     PeriodicAlertConfig,
     GroupLevelSettings
 )
-from periodic_alerts_engine import PeriodicAlertsEngine, AlertEvent
+from workflow.periodic_alerts_engine import PeriodicAlertsEngine, AlertEvent
 
 def test_symbol_groups_manager():
     """Test the enhanced Symbol Groups Manager."""

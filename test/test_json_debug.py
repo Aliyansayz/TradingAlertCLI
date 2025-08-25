@@ -7,7 +7,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from backend.symbol_groups_manager import SymbolSchedulerSettings, TimeWindowSlot
+from utility.symbol_groups_manager import SymbolSchedulerSettings, TimeWindowSlot
 
 def test_json_issue():
     print("🧪 Testing JSON serialization issue...")

@@ -19,8 +19,8 @@ def test_finance_app():
     
     try:
         print("Importing backend components...")
-        from backend.symbol_groups_manager import SymbolGroupManager
-        from backend.group_analysis_engine import GroupAnalysisEngine  
+        from backend.utility.symbol_groups_manager import SymbolGroupManager
+        from backend.workflow.group_analysis_engine import GroupAnalysisEngine  
         from backend.trading_cli import IndicatorSettings, PeriodicUnitTester, SchedulerSettings
         from finance_app import AnalysisWorkerThread
         

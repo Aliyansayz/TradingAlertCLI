@@ -20,9 +20,9 @@ from datetime import datetime
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from trading_cli import TradingCLI, KeyboardInput, IndicatorSettings, PeriodicUnitTester
-from symbol_groups_manager import SymbolGroupManager, SymbolConfig
+from utility.symbol_groups_manager import SymbolGroupManager, SymbolConfig
 from workflow.group_analysis_engine import GroupAnalysisEngine, SymbolDataFetcher
-from indicators import ADX, Stochastic_Oscillator, SupertrendIndicator
+from utility.indicators import ADX, Stochastic_Oscillator, SupertrendIndicator
 
 def test_keyboard_input():
     """Test enhanced keyboard input functionality."""

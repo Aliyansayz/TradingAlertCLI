@@ -12,15 +12,15 @@ providing a modern, modular architecture for extensibility.
 """
 
 # Core imports for GUI functionality - no automatic execution
-from .symbol_groups_manager import SymbolGroupManager, SymbolGroup, SymbolConfig
-from .group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter, SymbolAnalyzer
+from .utility.symbol_groups_manager import SymbolGroupManager, SymbolGroup, SymbolConfig
+from .workflow.group_analysis_engine import GroupAnalysisEngine, GroupAnalysisReporter, SymbolAnalyzer
 from .trading_cli import IndicatorSettings, PeriodicUnitTester, SchedulerSettings
 
 # Import symbol mappings
-from .forex_symbols import get_forex_symbols
-from .indices_symbols import get_indices_symbols
-from .crypto_symbols import get_crypto_symbols, get_crypto_categories
-from .stocks_symbols import (
+from .utility.forex_symbols import get_forex_symbols
+from .utility.indices_symbols import get_indices_symbols
+from .utility.crypto_symbols import get_crypto_symbols, get_crypto_categories
+from .utility.stocks_symbols import (
     get_popular_stocks, 
     get_sector_stocks,
     get_market_cap_categories,
@@ -28,8 +28,8 @@ from .stocks_symbols import (
 )
 
 # Import indicator classes (preserved for backward compatibility)
-from .indicators import ADX, Stochastic_Oscillator, ATRBands, SupertrendIndicator, RSI
-from .indicators_oscillators import Oscillator
+from .utility.indicators import ADX, Stochastic_Oscillator, ATRBands, SupertrendIndicator, RSI
+from .utility.indicators_oscillators import Oscillator
 
 # Package metadata
 __version__ = "1.0.0"

@@ -104,8 +104,8 @@ class SymbolDataFetcher:
             asset_map = symbol_map.get(config.asset_type, {})
             yf_symbol = asset_map.get(config.symbol.lower(), config.symbol)
             
-            # Fetch data
-            data = yf.download(yf_symbol, period=config.period, interval=config.timeframe, progress=False)
+            # Fetch data with explicit auto_adjust=False to suppress FutureWarning
+            data = yf.download(yf_symbol, period=config.period, interval=config.timeframe, progress=False, auto_adjust=False)
             
             if data.empty:
                 return pd.DataFrame()
