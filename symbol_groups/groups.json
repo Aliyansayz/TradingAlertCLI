@@ -1,0 +1,3212 @@
+{
+  "groups": [
+    {
+      "group_id": "major_forex",
+      "name": "Major Forex Pairs",
+      "description": "Major currency pairs with different timeframes for scalping and swing trading",
+      "symbols": {
+        "eurusd_1m": {
+          "symbol": "EURUSD",
+          "asset_type": "forex",
+          "timeframe": "1m",
+          "period": "1d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 21,
+            "rsi_overbought": 75.0,
+            "rsi_oversold": 25.0,
+            "macd_fast": 10,
+            "macd_slow": 20,
+            "macd_signal": 9,
+            "bb_period": 25,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": true,
+            "alert_interval": 20,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "volume_spike": true
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "eurusd_15m": {
+          "symbol": "EURUSD",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "gbpusd_15m": {
+          "symbol": "GBPUSD",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "usdjpy_15m": {
+          "symbol": "USDJPY",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "audusd_1h": {
+          "symbol": "AUDUSD",
+          "asset_type": "forex",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "usdcad_15m": {
+          "symbol": "USDCAD",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T14:53:21.686655",
+      "updated_at": "2025-08-25T17:41:33.685890",
+      "enabled": true,
+      "tags": [
+        "forex",
+        "major_pairs",
+        "scalping",
+        "swing"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": true,
+          "run_interval": 25,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "us_indices",
+      "name": "US Stock Indices",
+      "description": "Major US stock market indices for trend analysis",
+      "symbols": {
+        "us30_30m": {
+          "symbol": "US30",
+          "asset_type": "indices",
+          "timeframe": "30m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "us500_30m": {
+          "symbol": "US500",
+          "asset_type": "indices",
+          "timeframe": "30m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "nasdaq_1h": {
+          "symbol": "NASDAQ",
+          "asset_type": "indices",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "russell_1h": {
+          "symbol": "RUSSELL",
+          "asset_type": "indices",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": false,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T14:53:21.686655",
+      "updated_at": "2025-08-23T14:53:21.686655",
+      "enabled": true,
+      "tags": [
+        "indices",
+        "us_market",
+        "trend_analysis"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "crypto_portfolio",
+      "name": "Crypto Portfolio",
+      "description": "Major cryptocurrencies for portfolio analysis",
+      "symbols": {
+        "btc_1h": {
+          "symbol": "BTC",
+          "asset_type": "crypto",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "eth_1h": {
+          "symbol": "ETH",
+          "asset_type": "crypto",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "ada_4h": {
+          "symbol": "ADA",
+          "asset_type": "crypto",
+          "timeframe": "4h",
+          "period": "2mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T14:53:21.686655",
+      "updated_at": "2025-08-23T14:53:21.686655",
+      "enabled": true,
+      "tags": [
+        "crypto",
+        "portfolio",
+        "digital_assets"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "tech_stocks",
+      "name": "Technology Stocks",
+      "description": "Major technology company stocks (Updated to include TSLA)",
+      "symbols": {
+        "aapl_1d": {
+          "symbol": "AAPL",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "3mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "msft_1d": {
+          "symbol": "MSFT",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "3mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "googl_1d": {
+          "symbol": "GOOGL",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "3mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "tsla_1d": {
+          "symbol": "TSLA",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "3mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T14:53:21.686655",
+      "updated_at": "2025-08-23T14:53:21.686655",
+      "enabled": true,
+      "tags": [
+        "stocks",
+        "technology",
+        "large_cap"
+      ],
+      "metadata": {
+        "last_updated": "2025-08-23T14:53:21.686655"
+      },
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "test_stocks",
+      "name": "Test Stock Group",
+      "description": "Simple test with major stock symbols",
+      "symbols": {
+        "aapl_1d": {
+          "symbol": "AAPL",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "msft_1d": {
+          "symbol": "MSFT",
+          "asset_type": "stocks",
+          "timeframe": "1d",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T14:55:45.530694",
+      "updated_at": "2025-08-23T14:55:45.530694",
+      "enabled": true,
+      "tags": [
+        "test",
+        "stocks"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "forex_analysis",
+      "name": "Forex Analysis Group",
+      "description": "Major forex pairs for detailed technical analysis",
+      "symbols": {
+        "eurusd_15m": {
+          "symbol": "eurusd",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "gbpusd_15m": {
+          "symbol": "gbpusd",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "usdjpy_30m": {
+          "symbol": "usdjpy",
+          "asset_type": "forex",
+          "timeframe": "30m",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "audusd_1h": {
+          "symbol": "audusd",
+          "asset_type": "forex",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T15:12:53.684449",
+      "updated_at": "2025-08-23T15:12:53.684449",
+      "enabled": true,
+      "tags": [
+        "forex",
+        "major_pairs",
+        "technical_analysis"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "indices_analysis",
+      "name": "Indices Analysis Group",
+      "description": "Major stock indices for trend and momentum analysis",
+      "symbols": {
+        "dow30": {
+          "symbol": "dow30",
+          "asset_type": "indices",
+          "timeframe": "30m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "sp500": {
+          "symbol": "sp500",
+          "asset_type": "indices",
+          "timeframe": "30m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "nasdaq": {
+          "symbol": "nasdaq",
+          "asset_type": "indices",
+          "timeframe": "1h",
+          "period": "1mo",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T15:12:53.684449",
+      "updated_at": "2025-08-23T15:12:53.684449",
+      "enabled": true,
+      "tags": [
+        "indices",
+        "trend_analysis",
+        "momentum"
+      ],
+      "metadata": {},
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": false,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": false,
+        "analysis_interval": 30
+      }
+    },
+    {
+      "group_id": "demo_forex_group",
+      "name": "Demo Forex Group",
+      "description": "Sample forex group for CLI testing",
+      "symbols": {
+        "eurusd_15m": {
+          "symbol": "eurusd",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        },
+        "gbpusd_15m": {
+          "symbol": "gbpusd",
+          "asset_type": "forex",
+          "timeframe": "15m",
+          "period": "5d",
+          "data_source": "yfinance",
+          "enabled": true,
+          "indicator_settings": {
+            "rsi_period": 14,
+            "rsi_overbought": 70.0,
+            "rsi_oversold": 30.0,
+            "macd_fast": 12,
+            "macd_slow": 26,
+            "macd_signal": 9,
+            "bb_period": 20,
+            "bb_std": 2.0,
+            "sma_periods": [
+              20,
+              50,
+              200
+            ],
+            "ema_periods": [
+              12,
+              26
+            ],
+            "stoch_k_period": 14,
+            "stoch_d_period": 3,
+            "adx_period": 14,
+            "atr_period": 14,
+            "williams_r_period": 14,
+            "cci_period": 20,
+            "roc_period": 12,
+            "mfi_period": 14,
+            "tsi_fast": 25,
+            "tsi_slow": 13
+          },
+          "periodic_alerts": {
+            "enabled": false,
+            "alert_interval": 15,
+            "alert_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alert_hours": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "conditions": {
+              "rsi_overbought": true,
+              "rsi_oversold": true,
+              "macd_bullish_crossover": true,
+              "macd_bearish_crossover": true,
+              "price_above_sma20": false,
+              "price_below_sma20": false,
+              "volume_spike": false
+            },
+            "last_triggered": null,
+            "alert_count": 0
+          },
+          "trading_session": {
+            "timezone": "UTC",
+            "market_hours": {
+              "start": "09:00",
+              "end": "17:00"
+            },
+            "enable_after_hours": false
+          },
+          "risk_management": {
+            "max_position_size": 1.0,
+            "stop_loss_pct": 2.0,
+            "take_profit_pct": 6.0,
+            "risk_reward_ratio": 3.0
+          }
+        }
+      },
+      "created_at": "2025-08-23T16:15:59.726073",
+      "updated_at": "2025-08-23T16:15:59.726073",
+      "enabled": true,
+      "tags": [
+        "demo",
+        "forex"
+      ],
+      "metadata": {
+        "periodic_alerts": true,
+        "auto_run_enabled": false,
+        "schedule_interval": 15,
+        "schedule_weekdays": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "group_settings": {
+        "default_indicator_settings": {
+          "rsi_period": 14,
+          "rsi_overbought": 70.0,
+          "rsi_oversold": 30.0,
+          "macd_fast": 12,
+          "macd_slow": 26,
+          "macd_signal": 9,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "sma_periods": [
+            20,
+            50,
+            200
+          ],
+          "ema_periods": [
+            12,
+            26
+          ],
+          "stoch_k_period": 14,
+          "stoch_d_period": 3,
+          "adx_period": 14,
+          "atr_period": 14,
+          "williams_r_period": 14,
+          "cci_period": 20,
+          "roc_period": 12,
+          "mfi_period": 14,
+          "tsi_fast": 25,
+          "tsi_slow": 13
+        },
+        "default_periodic_alerts": {
+          "enabled": false,
+          "alert_interval": 15,
+          "alert_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "alert_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "conditions": {
+            "rsi_overbought": true,
+            "rsi_oversold": true,
+            "macd_bullish_crossover": true,
+            "macd_bearish_crossover": true,
+            "price_above_sma20": false,
+            "price_below_sma20": false,
+            "volume_spike": false
+          },
+          "last_triggered": null,
+          "alert_count": 0
+        },
+        "scheduler_settings": {
+          "enabled": true,
+          "run_interval": 15,
+          "run_weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "run_hours": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "timezone": "UTC"
+        },
+        "notification_settings": {
+          "email_enabled": false,
+          "desktop_notifications": true,
+          "sound_alerts": false,
+          "log_to_file": true
+        },
+        "auto_analysis": true,
+        "analysis_interval": 30
+      }
+    }
+  ],
+  "last_updated": "2025-08-25T17:41:33.687368",
+  "version": "1.0"
+}
