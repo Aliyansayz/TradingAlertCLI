@@ -1,0 +1,15 @@
+# Commands to push to GitHub
+# Replace 'YOUR_GITHUB_USERNAME' with your actual GitHub username
+
+# Add the remote repository (run this after creating the repo on GitHub)
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/TradingAlertCLI.git
+
+# Rename the default branch to main (GitHub standard)
+git branch -M main
+
+# Push the code to GitHub
+git push -u origin main
+
+# Alternative if you prefer SSH (requires SSH key setup)
+# git remote add origin git@github.com:YOUR_GITHUB_USERNAME/TradingAlertCLI.git
+# git push -u origin main
